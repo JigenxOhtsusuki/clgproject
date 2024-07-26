@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.content {
+    padding-bottom: 60px; /* Height of the footer + some margin */
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto 0; /* 20px margin from the top */
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+}
+
+.banner-text {
+    position: absolute;
+    top: 40%; /* Adjust this value to position the text between the circle and the banner */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: adds a semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.footer-buttons {
+    margin-bottom: 10px; /* Space between buttons and footer text */
+}
+
+.footer-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-button:hover {
+    background-color: #777;
+}
