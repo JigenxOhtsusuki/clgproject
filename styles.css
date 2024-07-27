@@ -3,18 +3,20 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; /* Ensure the body takes up full viewport height */
-    position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .content {
-    padding-bottom: 60px; /* Height of the footer + some margin */
+    flex: 1; /* Ensures the content takes up available space */
+    overflow: auto; /* Allows the content to be scrollable */
 }
 
 .slider {
     position: relative;
     width: 100%;
     max-width: 600px;
-    margin: 20px auto 0; /* 20px margin from the top */
+    margin: 20px auto; /* Center the slider and add top margin */
     overflow: hidden;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -37,7 +39,7 @@ body {
 
 .circle {
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 250px;
@@ -48,38 +50,55 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 100%; /* Adjust this value to position the text between the circle and the banner */
-    left: 30%;
+    top: calc(50% + 140px); /* Adjust this value to position the text below the circle */
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: adds a semi-transparent background */
     padding: 10px;
     border-radius: 5px;
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
+    .slider {
+        max-width: 80%;
+    }
+
+    .slide img {
+        border-radius: 8px;
+    }
+
     .circle {
-        top: 170%; /* Adjust top position for tablets */
         width: 200px;
         height: 200px;
+        top: 45%; /* Adjust top position for tablets */
     }
 
     .banner-text {
-        top: 100%;
+        top: calc(45% + 110px);
         font-size: 18px;
     }
 }
 
 @media (max-width: 480px) {
+    .slider {
+        max-width: 90%;
+    }
+
+    .slide img {
+        border-radius: 6px;
+    }
+
     .circle {
-        top: 150%; /* Adjust top position for mobile phones */
         width: 150px;
         height: 150px;
+        top: 40%; /* Adjust top position for mobile phones */
     }
 
     .banner-text {
-        top: 12%;
+        top: calc(40% + 85px);
         font-size: 16px;
     }
 }
