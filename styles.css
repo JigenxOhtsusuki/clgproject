@@ -48,12 +48,11 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 18%; /* Adjust this value to position the text between the circle and the banner */
+    top: 20%; /* Adjust this value to position the text between the circle and the banner */
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: #333;
-    background-color: rgba(255, 255, 255, 0.7); /* Optional: adds a semi-transparent background */
     padding: 10px;
     border-radius: 5px;
 }
@@ -61,7 +60,7 @@ body {
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .circle {
-        top: 30%; /* Adjust top position for tablets */
+        top: 40%; /* Adjust top position for tablets */
         width: 200px;
         height: 200px;
     }
