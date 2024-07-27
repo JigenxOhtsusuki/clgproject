@@ -3,13 +3,10 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; /* Ensure the body takes up full viewport height */
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 
 .content {
-    flex: 1; /* Ensures the content takes up available space */
-    overflow: auto; /* Allows the content to be scrollable */
     padding-bottom: 60px; /* Height of the footer + some margin */
 }
 
@@ -51,11 +48,12 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 150%; /* Adjust this value to position the text between the circle and the banner */
-    left: 30%;
+    top: 18%; /* Adjust this value to position the text between the circle and the banner */
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: adds a semi-transparent background */
     padding: 10px;
     border-radius: 5px;
 }
@@ -63,7 +61,7 @@ body {
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .circle {
-        top: 250%; /* Adjust top position for tablets */
+        top: 30%; /* Adjust top position for tablets */
         width: 200px;
         height: 200px;
     }
@@ -76,7 +74,7 @@ body {
 
 @media (max-width: 480px) {
     .circle {
-        top:200%; /* Adjust top position for mobile phones */
+        top: 25%; /* Adjust top position for mobile phones */
         width: 150px;
         height: 150px;
     }
