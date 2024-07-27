@@ -51,7 +51,7 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 60%; /* Adjust this value to position the text between the circle and the banner */
+    top: 150%; /* Adjust this value to position the text between the circle and the banner */
     left: 30%;
     transform: translate(-50%, -50%);
     font-size: 20px;
@@ -63,7 +63,7 @@ body {
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .circle {
-        top: 90%; /* Adjust top position for tablets */
+        top: 250%; /* Adjust top position for tablets */
         width: 200px;
         height: 200px;
     }
@@ -76,7 +76,7 @@ body {
 
 @media (max-width: 480px) {
     .circle {
-        top:60%; /* Adjust top position for mobile phones */
+        top:200%; /* Adjust top position for mobile phones */
         width: 150px;
         height: 150px;
     }
