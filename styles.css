@@ -51,7 +51,7 @@ body {
 
 .banner-text {
     position: absolute;
-    top: 35%; /* Adjust this value to position the text between the circle and the banner */
+    top: 60%; /* Adjust this value to position the text between the circle and the banner */
     left: 30%;
     transform: translate(-50%, -50%);
     font-size: 20px;
@@ -63,7 +63,7 @@ body {
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .circle {
-        top: 35%; /* Adjust top position for tablets */
+        top: 90%; /* Adjust top position for tablets */
         width: 200px;
         height: 200px;
     }
