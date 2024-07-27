@@ -36,8 +36,8 @@ body {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:50%;
-    height: 50%;
+    width:250px;
+    height: 250px;
     background-color: lightgrey;
     border-radius: 50%;
 }
