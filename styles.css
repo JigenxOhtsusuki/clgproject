@@ -3,7 +3,14 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh; /* Ensure the body takes up full viewport height */
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1; /* Ensures the content takes up available space */
+    overflow: auto; /* Allows the content to be scrollable */
+    padding-bottom: 60px; /* Height of the footer + some margin */
 }
 
 .slider {
@@ -36,7 +43,7 @@ body {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width:250px;
+    width: 250px;
     height: 250px;
     background-color: lightgrey;
     border-radius: 50%;
@@ -45,11 +52,70 @@ body {
 .banner-text {
     position: absolute;
     top: 18%; /* Adjust this value to position the text between the circle and the banner */
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
     color: #333;
     background-color: rgba(255, 255, 255, 0.7); /* Optional: adds a semi-transparent background */
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .circle {
+        top: 30%; /* Adjust top position for tablets */
+        width: 200px;
+        height: 200px;
+    }
+
+    .banner-text {
+        top: 15%;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .circle {
+        top: 25%; /* Adjust top position for mobile phones */
+        width: 150px;
+        height: 150px;
+    }
+
+    .banner-text {
+        top: 12%;
+        font-size: 16px;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.footer-buttons {
+    margin-bottom: 10px; /* Space between buttons and footer text */
+}
+
+.footer-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-button:hover {
+    background-color: #777;
 }
