@@ -1,5 +1,5 @@
 const apiKey = '8ccf55c5345ce65968b95b8f3466d4a5'; // Replace with your TMDb API key
-const movieId = '533535'; // Replace with the TMDb movie ID
+const movieId = '801688'; // Replace with the TMDb movie ID
 const defaultProfileImage = 'https://i.postimg.cc/QNpB22z7/1000008089-modified.png'; // Path to the default profile image
 
 async function getMovieDetails() {
