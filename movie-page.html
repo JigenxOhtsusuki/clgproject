@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/movie-page.css">
+    <title>Auto Play Video</title>
+</head>
+<body>
+    <div id="video-container">
+        <div id="overlay"></div>
+        <img id="placeholder-image" src="https://image.tmdb.org/t/p/original/s16H6tpK2utvwDtzZ8Qy4qm5Emw.jpg" alt="Placeholder Image">
+        <img id="title-image" src="https://image.tmdb.org/t/p/original/gRbtxV9a3ACpE4wIe1W2CWuoWUQ.png" alt="Movie Title">
+        <video id="myVideo" muted>
+            <source src="trailers/Avatar2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    <footer class="fixed-footer">
+      <a href="anime.html">
+        <button class="footer-btn">Anime</button>
+      </a>
+      <a href="messaging.html">
+        <button class="footer-btn">Messaging</button>
+      </a>
+      <a href="movies.html">
+        <button class="footer-btn">Movies</button>
+      </a>
+    </footer>
+    </div>
+    <script src="scripts/movie-page.js"></script>
+</body>
+</html>
