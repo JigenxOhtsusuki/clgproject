@@ -88,7 +88,7 @@ a {
     text-decoration: none;
 }
 
-rectangle {
+.rectangle {
     width: 95vw;
     height: 25vh;
     background: radial-gradient(circle at top left, black, crimson);
