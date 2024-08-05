@@ -224,7 +224,7 @@ a {
     left: 0;
     bottom: 0;
     width: 100vw;
-    height: 10vh; /* Adjust this based on your footer height */
+    height: 7vh; /* Adjust this based on your footer height */
     background-color: black;
     display: flex;
     justify-content: space-around;
