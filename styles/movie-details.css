@@ -11,18 +11,19 @@
 }
 
 .movie-summary {
-    background-color: #A27B5C;
-    color: #2C3639;
+    color: white;
     padding: 10px;
     border-radius: 5px;
 }
 
 .cbfc {
+    padding-top: 10px;
     display: inline-block;
-    border: 1px solid #2C3639;
-    padding: 2px 5px;
+    border: 1px solid crimson;
+    padding: 10px 5px;
     border-radius: 5px;
     margin-right: 10px;
+    color: white;
 }
 
 .movie-cast-container {
@@ -35,14 +36,16 @@
 }
 
 .movie-cast {
-    display: flex;
-    margin: 20px auto; /* Center the slider and add top margin */
+    display: flex 0 0 30%;
+    margin: 40px auto; /* Center the slider and add top margin */
+    padding-left: 20px;
 }
 
 .cast-member {
     display: inline-block;
     margin: 10px;
     text-align: center;
+    color: white;
 }
 
 .cast-member img {
@@ -55,7 +58,7 @@
 .cast-subheading {
     font-size: 1.5em;
     margin-top: 20px;
-    color: #2C3639;
+    color: crimson;
     max-width: 90%; /* Adjust the max width to make it more responsive */
     margin: 20px auto; /* Center the slider and add top margin */
 }
