@@ -107,7 +107,7 @@ a {
   color: white;
   font-weight: bold;
     padding-left: 20px;
-    font-size: 1.2em;
+    font-size: 8px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -212,7 +212,7 @@ a {
     font-weight: 200;
     font-style: normal;
     color: white;
-    font-size: 1.5em;
+    font-size: 10px;
     margin: 10px auto 10px;
     border-radius: 15px;
     flex: 0 0 auto;
