@@ -99,7 +99,7 @@ a {
     font-weight: 200;
     font-style: normal;
     color: white;
-    font-size: 6em;
+    font-size: 60px;
   margin: 10px auto 10px;
   border-radius: 15px;
 }
@@ -107,7 +107,7 @@ a {
   color: white;
   font-weight: bold;
     padding-left: 20px;
-    font-size: 8px;
+    font-size: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
 }
@@ -209,10 +209,9 @@ a {
     justify-content: center;
     align-items: center;
     font-family: "Barlow", sans-serif;
-    font-weight: 200;
     font-style: normal;
     color: white;
-    font-size: 10px;
+    font-size: 25px;
     margin: 10px auto 10px;
     border-radius: 15px;
     flex: 0 0 auto;
