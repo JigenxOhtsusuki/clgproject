@@ -67,7 +67,7 @@ body {
 
 .cbfc-info {
     color: white; /* Text color for the info */
-  }
+}
 
 .content {
     min-height: calc(100vh - 60px); /* Adjust this based on the footer height */
@@ -84,6 +84,7 @@ body {
     padding-right: 50px;
     padding-bottom: 100px;
 }
+
 a {
     text-decoration: none;
 }
@@ -100,12 +101,13 @@ a {
     font-style: normal;
     color: white;
     font-size: 60px;
-  margin: 10px auto 10px;
-  border-radius: 15px;
+    margin: 10px auto 10px;
+    border-radius: 15px;
 }
+
 .action {
-  color: white;
-  font-weight: bold;
+    color: white;
+    font-weight: bold;
     padding-left: 20px;
     font-size: 15px;
     padding-bottom: 10px;
@@ -120,62 +122,7 @@ a {
     margin: 0 auto; /* Centers the container horizontally */
 }
 
-.movie1 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    background-size: contain;
-    border-radius: 15px;
-    flex: 0 0 auto;
-    margin-right: 10px;
-}
-
-.movie2 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    border-radius: 15px;
-    flex: 0 0 auto;
-    margin-right: 10px;
-}
-
-.movie3 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    border-radius: 15px;
-    flex: 0 0 auto;
-    margin-right: 10px;
-}
-
-.movie4 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    border-radius: 15px;
-    flex: 0 0 auto;
-    margin-right: 10px;
-}
-
-.movie5 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    border-radius: 15px;
-    flex: 0 0 auto;
-    margin-right: 10px;
-}
-
-.movie6 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    border-radius: 15px;
-    flex: 0 0 auto;
-    margin-right: 10px;
-}
-
-.movie7 {
+.movie1, .movie2, .movie3, .movie4, .movie5, .movie6, .movie7, .movie8 {
     width: 35vw;
     height: 12vh;
     background: radial-gradient(circle at top left, black, crimson);
@@ -185,11 +132,7 @@ a {
 }
 
 .movie8 {
-    width: 35vw;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    border-radius: 15px;
-    flex: 0 0 auto;
+    margin-right: 0; /* Remove margin for the last item */
 }
 
 .movie-png {
@@ -198,10 +141,10 @@ a {
     position: relative;
     top: 50%;
     bottom: 50%;
-    transform: translate(22.5% , -50%)
+    transform: translate(22.5% , -50%);
 }
 
-.language1 {
+.language1, .language2 {
     width: 35%;
     height: 12vh;
     background: radial-gradient(circle at top left, black, crimson);
@@ -215,23 +158,10 @@ a {
     margin: 10px auto 10px;
     border-radius: 15px;
     flex: 0 0 auto;
-    margin-right: 10px;
 }
 
 .language2 {
-    width: 35%;
-    height: 12vh;
-    background: radial-gradient(circle at top left, black, crimson);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Barlow", sans-serif;
-    font-style: normal;
-    color: white;
-    font-size: 25px;
-    margin: 10px auto 10px;
-    border-radius: 15px;
-    flex: 0 0 auto;
+    margin-right: 0; /* Remove margin for the last item */
 }
 
 .fixed-footer {
@@ -262,3 +192,28 @@ a {
     color: black;
 }
 
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .banner-text {
+        font-size: 8vw; /* Increase font size for smaller screens */
+    }
+
+    .rectangle {
+        font-size: 8vw; /* Increase font size for smaller screens */
+    }
+
+    .action {
+        font-size: 5vw; /* Adjust font size for smaller screens */
+    }
+
+    .movie1, .movie2, .movie3, .movie4, .movie5, .movie6, .movie7, .movie8 {
+        width: 45vw; /* Adjust width for smaller screens */
+        height: 15vh; /* Adjust height for smaller screens */
+    }
+
+    .language1, .language2 {
+        width: 45vw; /* Adjust width for smaller screens */
+        height: 15vh; /* Adjust height for smaller screens */
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }
+}
