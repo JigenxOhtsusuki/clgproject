@@ -218,6 +218,22 @@ a {
     margin-right: 10px;
 }
 
+.language2 {
+    width: 35%;
+    height: 12vh;
+    background: radial-gradient(circle at top left, black, crimson);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow", sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 25px;
+    margin: 10px auto 10px;
+    border-radius: 15px;
+    flex: 0 0 auto;
+}
+
 .fixed-footer {
     position: fixed;
     left: 0;
