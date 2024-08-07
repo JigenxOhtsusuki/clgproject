@@ -96,8 +96,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Barlow", sans-serif;
-    font-weight: 200;
     font-style: normal;
     color: white;
     font-size: 60px;
@@ -144,23 +142,31 @@ a {
     transform: translate(22.5% , -50%);
 }
 
-.language1, .language2 {
-    width: 35%;
+.language1 {
+    width: 35vw;
     height: 12vh;
     background: radial-gradient(circle at top left, black, crimson);
+    border-radius: 15px;
+    flex: 0 0 auto;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Barlow", sans-serif;
     font-style: normal;
     color: white;
-    font-size: 25px;
-    margin: 10px auto 10px;
-    border-radius: 15px;
-    flex: 0 0 auto;
 }
 
 .language2 {
+    width: 35vw;
+    height: 12vh;
+    background: radial-gradient(circle at top left, black, crimson);
+    border-radius: 15px;
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    color: white;
     margin-right: 0; /* Remove margin for the last item */
 }
 
@@ -190,31 +196,4 @@ a {
 .footer-btn:hover {
     background-color: white;
     color: black;
-}
-
-/* Media Queries for Mobile Devices */
-@media (max-width: 600px) {
-
-    .rectangle {
-        font-size: 40px; /* Increase font size for smaller screens */
-    }
-
-    .action {
-        font-size: 20px; /* Adjust font size for smaller screens */
-    }
-
-    .movie1, .movie2, .movie3, .movie4, .movie5, .movie6, .movie7, .movie8 {
-        width: 45vw; /* Adjust width for smaller screens */
-        height: 15vh; /* Adjust height for smaller screens */
-    }
-
-    .language1, .language2 {
-        width: 45vw; /* Adjust width for smaller screens */
-        height: 15vh; /* Adjust height for smaller screens */
-        font-size: 30px; /* Adjust font size for smaller screens */
-        
-    }
-    .language2 {
-        margin: 10px auto 10px;
-        margin-right: 0px;
 }
