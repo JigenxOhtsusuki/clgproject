@@ -194,16 +194,13 @@ a {
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
-    .banner-text {
-        font-size: 8vw; /* Increase font size for smaller screens */
-    }
 
     .rectangle {
-        font-size: 8vw; /* Increase font size for smaller screens */
+        font-size: 40px; /* Increase font size for smaller screens */
     }
 
     .action {
-        font-size: 5vw; /* Adjust font size for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
     }
 
     .movie1, .movie2, .movie3, .movie4, .movie5, .movie6, .movie7, .movie8 {
@@ -214,6 +211,10 @@ a {
     .language1, .language2 {
         width: 45vw; /* Adjust width for smaller screens */
         height: 15vh; /* Adjust height for smaller screens */
-        font-size: 6vw; /* Adjust font size for smaller screens */
+        font-size: 30px; /* Adjust font size for smaller screens */
+        
     }
+    .language2 {
+        margin: 10px auto 10px;
+        margin-right: 0px;
 }
