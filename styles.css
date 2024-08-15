@@ -1,0 +1,282 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: crimson;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .hcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+svg {
+    align-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.sbutton {
+    background-color: crimson;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-width: 0px;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: crimson;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-width: 0px;
+}
+
+.info-bar {
+    height: 4px;
+    background: crimson;
+    position: absolute; /* Use absolute positioning */
+    top: 65px; /* Adjust based on header height */
+    transition: transform 0.5s ease, width 0.5s ease;
+    z-index: 999; /* Ensure the info bar stays above other elements */
+}
+
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    display: none; /* Hide all sections by default */
+}
+
+.section.active {
+    display: block; /* Show the active section */
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1em;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        padding: 0;
+    }
+
+    .hcontainer {
+        position: relative; /* Ensure the toggle button is correctly positioned */
+    }
+
+    nav {
+        background: #333; /* Match sidebar background to header */
+        color: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 998; /* Ensure it is behind the info-bar but above backdrop */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; /* Stack list items vertically */
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+    }
+
+    .sbutton {
+        margin-top: 0;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .cta-button {
+        padding: 10px 15px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    /* Show the sidebar when the menu is active */
+    nav.active {
+        transform: translateX(0);
+    }
+
+    /* Add styles for the toggle button */
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: crimson;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        z-index: 999; /* Ensuring it is above the sidebar */
+    }
+
+    /* Ensure the close button is also properly styled and visible on mobile */
+    .close-menu {
+        display: block;
+        background: crimson;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    /* Hide the info bar on tablet and mobile views */
+    .info-bar {
+        display: none; /* Hide the info bar on tablets and mobile devices */
+    }
+}
+
+/* Ensure the info bar is visible on larger screens */
+@media (min-width: 769px) {
+    .info-bar {
+        display: block; /* Show the info bar on larger screens */
+    }
+
+    /* Hide the menu toggle button on larger screens */
+    #menu-toggle {
+        display: none; /* Hide the menu toggle button on larger screens */
+    }
+
+    /* Hide the close button on larger screens */
+    .close-menu {
+        display: none; /* Hide the close button on larger screens */
+    }
+}
+
+/* Backdrop styles */
+.backdrop {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 997; /* Ensure it's behind the sidebar but above other content */
+}
+
+/* Show the backdrop when the sidebar is active */
+nav.active ~ .backdrop {
+    display: block;
+}
+
+/* Fix info-bar positioning when window is resized */
+@media screen and (min-width: 769px) {
+    .info-bar {
+        position: fixed;
+        top: 65px;
+    }
+}
