@@ -1,16 +1,18 @@
 import java.util.*;
-public class Facts {
-public static void main(String args[])
- {
+public class Factr {
+    public static void main(String args[]) {
         int num, fact = 1, i;
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter any  Integer");
+        System.out.println("Enter an Integer");
         num = in.nextInt();
-        for (i = 1; i <= num; i++)
-{
-            fact = fact * i;
-        }
-        System.out.println ("!" + num + " = " + fact);
+        factorial = getfactorial(num); // Method Declaration
+        System.out.println("!" + num + " = " + fact);
+}
+public static int getfactorial(int num)
+ // Method Implementation
+{  
+        if (num <= 1)
+            return 1;
+        return  num * getfactorial(num-1);
     }
 }
- 
