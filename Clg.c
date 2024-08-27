@@ -1,44 +1,53 @@
-Import java.io.*;
-import java.util.Scanner; 
-public class Ladderifelse 
-{ 
-public static void main(String[] args)
- { 
-Scanner scan = new Scanner(System.in); 
-System.out.println("Enter percentage marks"); 
-double percentage = scan.nextDouble();
- if(percentage >= 90)
+import java.io.*;
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) 
 {
- System.out.println("Excellent: Grade A"); 
-}
-else if (percentage < 90 && percentage >= 80)
-{ 
-System.out.println("Very Good: Grade B"); 
-}
-else if(percentage < 80 && percentage >= 70)
-{
- System.out.println("Good: Grade C"); 
-}
-else if(percentage < 70 && percentage >= 60)
-{ 
-System.out.println("Satisfactory: Grade D"); 
+    char  operator;
+    Double  n1, n2, result;
+    Scanner input = new Scanner(System.in);
+    System.out.println("Choose an operator: +, -, *, or /");
+    operator = input.next().charAt(0);
+    System.out.println("Enter first number");
+    n1 = input.nextDouble();
 
-}else if(percentage < 60 && percentage >= 50)
 
-{
-System.out.println("Work Hard: Grade E"); 
+   System.out.println("Enter second number");
+    n2 = input.nextDouble();
 
-}else if(percentage < 50 && percentage >= 40)
 
-{ 
+switch (operator)
+ {
+      case '+':
+        result = n1 + n2;
+        System.out.println(n1 + " + " + n2 + " = " + result);
+        break;
 
-System.out.println("Just Passed: Grade F"); 
 
-}
-else 
-{ 
+      case '-':
+        result = n1 - n2;
+        System.out.println(n1 + " - " + n2 + " = " + result);
+        break;
 
-System.out.println("Failed!"); 
-}
-} 
+
+          case '*':
+        result = n1 * n2;
+        System.out.println(n1 + " * " + n2 + " = " + result);
+        break;
+
+
+      case '/':
+        result = n1 / n2;
+        System.out.println(n1 + " / " + n2 + " = " + result);
+        break;
+
+
+      default:
+        System.out.println("Invalid operator!");
+        break;
+    }
+
+
+    input.close();
+  }
 }
