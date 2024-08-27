@@ -1,29 +1,21 @@
-import java.util.Scanner; 
-public class OddEven
- { 
-public static boolean isOddEven(int n)
- {
-if(n % 2 == 0) 
-return true; 
-else 
-return false;
- }
- public static void main(String[] args) 
-{ 
- int number = 0;
- boolean result = false; 
- Scanner scan = new Scanner(System.in);
- System.out.print("Enter an integer number: "); 
- number = scan.nextInt(); 
- result=isOddEven(number); 
-if(result)
-{
-System.out.println(number+" is an even number"); 
-}
-else 
-{
-System.out.println(number+" is an odd number"); 
- object scan.close();
- }
- }
-}
+import java.util.Scanner;  
+public class LargestNumber  
+{  
+public static void main(String args[])  
+{  
+int num1, num2, num3;  
+System.out.println("Enter three integers: ");  
+Scanner in = new Scanner(System.in);  
+num1=in.nextInt();  
+num2=in.nextInt();  
+num3=in.nextInt();  
+if (num1 > num2 && num1 > num3)  
+System.out.println("The largest number is: "+num1);  
+else if (num2 > num1 && num2 > num3)  
+System.out.println("The largest number is: "+num2);  
+else if (num3 > num1 && num3 > num2)  
+System.out.println("The largest number is: "+num3);  
+else  
+System.out.println("The numbers are same.");  
+}  
+}  
